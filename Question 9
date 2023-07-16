@@ -1,1 +1,58 @@
+What is abstraction explained with an example?
 
+Abstraction is the process of representing essential features of an object while hiding the unnecessary details. It allows you to create a blueprint for a class, specifying the interface without worrying about the implementation. Here's an example of abstraction in Java:
+
+// Shape.java (Abstraction)
+public abstract class Shape {
+    // Abstract method to get the area of the shape
+    public abstract double getArea();
+
+    // Concrete method
+    public void display() {
+        System.out.println("This is a shape.");
+    }
+}
+
+// Circle.java (Concrete class)
+public class Circle extends Shape {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+// Rectangle.java (Concrete class)
+public class Rectangle extends Shape {
+    private double width;
+    private double height;
+
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    @Override
+    public double getArea() {
+        return width * height;
+    }
+}
+
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Shape circle = new Circle(5.0);
+        Shape rectangle = new Rectangle(4.0, 6.0);
+
+        circle.display();
+        System.out.println("Circle Area: " + circle.getArea());
+
+        rectangle.display();
+        System.out.println("Rectangle Area: " + rectangle.getArea());
+    }
+}
