@@ -1,1 +1,23 @@
+What is the final class in Java?
 
+In Java, the final keyword is used to restrict the inheritance of a class or to prevent a class from being subclassed. When a class is declared as final, it means that no other class can extend it. Additionally, final can be applied to variables and methods to achieve different effects:
+
+
+Final Class: A final class cannot be subclassed. It is often used when a class has been fully implemented, and the developer wants to ensure that it remains unchanged and cannot be extended.
+
+final class MyFinalClass {
+    // Class implementation
+}
+
+Final Method: A final method cannot be overridden by subclasses. It is useful when a method's implementation is considered critical and should not be modified by any subclasses.
+class MyClass {
+    final void myFinalMethod() {
+        // Method implementation
+    }
+}
+
+Final Variable: A final variable, once assigned a value, cannot be changed or reassigned. It acts as a constant and is often used for values that should not be modified.
+java
+class MyClass {
+    final int MY_CONSTANT = 10;
+}
