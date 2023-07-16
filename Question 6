@@ -1,1 +1,15 @@
+Q) What is the benefit of encapsulation in Java?
 
+Ans) Encapsulation is one of the four fundamental OOP concepts, and it refers to the bundling of data and methods that operate on that data within a single unit, such as a class. The main benefits of encapsulation in Java are:
+
+Data Hiding: By making data members private, encapsulation prevents direct access to the internal state of an object from outside the class. Access is controlled through getter and setter methods, allowing the class to maintain data integrity and validation.
+
+Abstraction: Encapsulation helps in achieving abstraction by exposing only relevant information to the outside world and hiding unnecessary details. This simplifies the usage of the class, as users only need to interact with the public methods.
+
+Flexibility: Encapsulation allows the internal implementation of a class to change without affecting its external interface. As long as the public methods remain unchanged, other parts of the code using the class will continue to work correctly.
+
+Code Organization: Encapsulation promotes a clean and organized codebase by grouping related data and behaviors together in a single class.
+
+Security: Encapsulation enhances security by controlling access to sensitive data. With proper access control, only authorized parts of the code can modify the data, reducing the risk of accidental data corruption.
+
+Code Maintenance: Encapsulation makes code maintenance easier, as changes to the internal implementation can be localized to the class itself without impacting other parts of the code.
