@@ -1,1 +1,11 @@
+Q)Is Java a 100% Object-oriented Programming language? If no, why?
 
+No, Java is not considered a 100% pure object-oriented programming language. The reason for this is that Java includes some elements that do not adhere to the pure definition of object-oriented programming:
+
+Primitive Data Types: Java includes primitive data types like int, double, char, etc., which are not objects and do not inherit from a common class. Pure object-oriented languages do not have primitive data types; everything is an object.
+
+Static Members: Java allows the use of static variables and methods, which belong to the class rather than instances of the class. This means they are not tied to any specific object, breaking the object-oriented principle of encapsulation.
+
+Procedural Programming: Java allows the creation of procedural-style programs using static methods. While the language encourages object-oriented programming, it does not enforce it.
+
+Despite these deviations from a pure object-oriented paradigm, Java is widely considered an object-oriented language because it heavily emphasizes the use of classes, objects, inheritance, and encapsulation. The majority of Java programs are written in an object-oriented style, and Java's core libraries are designed with object-oriented principles in mind.
