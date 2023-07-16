@@ -1,1 +1,48 @@
+Write a simple Banking System program using OOPs concept where you can get account holder name, balance, etc.?
 
+
+
+// BankingSystem.java
+class Account {
+    private String accountHolderName;
+    private double balance;
+
+    public Account(String accountHolderName, double balance) {
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+        } else {
+            System.out.println("Insufficient balance!");
+        }
+    }
+}
+
+public class BankingSystem {
+    public static void main(String[] args) {
+        Account account1 = new Account("John Doe", 1000.0);
+        System.out.println("Account Holder Name: " + account1.getAccountHolderName());
+        System.out.println("Balance: " + account1.getBalance());
+
+        account1.deposit(500.0);
+        System.out.println("After Deposit, Balance: " + account1.getBalance());
+
+        account1.withdraw(200.0);
+        System.out.println("After Withdraw, Balance: " + account1.getBalance());
+    }
+}
